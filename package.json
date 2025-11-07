@@ -1,0 +1,17 @@
+{
+  "name": "tailwind-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+   "dev": "npx tailwindcss -i ./src/input.css -o ./public/output.css --content \"./index.html\" --watch",
+   "build": "npx tailwindcss -i ./src/input.css -o ./public/output.css --content \"./index.html\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^4.1.16"
+  }
+}

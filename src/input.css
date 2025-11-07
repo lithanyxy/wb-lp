@@ -1,0 +1,105 @@
+@import "tailwindcss";
+
+/*@tailwind base;
+@tailwind components;
+@tailwind utilities;*/
+@import "tailwindcss";
+
+/* Optional: define theme variables */
+:root {
+  --color-primary-50: #eef2ff;
+  --color-primary-100: #e0e7ff;
+  --color-primary-200: #c7d2fe;
+  --color-primary-300: #a5b4fc;
+  --color-primary-400: #818cf8;
+  --color-primary-500: #6366f1;
+  --color-primary-600: #4f46e5;
+  --color-primary-700: #4338ca;
+  --color-primary-800: #3730a3;
+  --color-primary-900: #312e81;
+  --color-primary-950: #1e1b4b;
+}
+
+/* Custom utilities using these variables */
+
+
+@layer utilities {
+	
+.bg-primary-50    { background-color: var(--color-primary-50); }
+  .bg-primary-100   { background-color: var(--color-primary-100); }
+  .bg-primary-200   { background-color: var(--color-primary-200); }
+  .bg-primary-300   { background-color: var(--color-primary-300); }
+  .bg-primary-400   { background-color: var(--color-primary-400); }
+  .bg-primary-500   { background-color: var(--color-primary-500); }
+  .bg-primary-600   { background-color: var(--color-primary-600); }
+  .bg-primary-700   { background-color: var(--color-primary-700); }
+  .bg-primary-800   { background-color: var(--color-primary-800); }
+  .bg-primary-900   { background-color: var(--color-primary-900); }
+  .bg-primary-950   { background-color: var(--color-primary-950); }
+
+  /* optional text colors */
+  .text-primary-50    { color: var(--color-primary-50); }
+  .text-primary-100   { color: var(--color-primary-100); }
+  .text-primary-200   { color: var(--color-primary-200); }
+  .text-primary-300   { color: var(--color-primary-300); }
+  .text-primary-400   { color: var(--color-primary-400); }
+  .text-primary-500   { color: var(--color-primary-500); }
+  .text-primary-600   { color: var(--color-primary-600); }
+  .text-primary-700   { color: var(--color-primary-700); }
+  .text-primary-800   { color: var(--color-primary-800); }
+  .text-primary-900   { color: var(--color-primary-900); }
+  .text-primary-950   { color: var(--color-primary-950); }
+	
+	
+  .text-shadow { text-shadow: 2px 2px 4px rgba(0,0,0,0.3);}
+  
+ .bg-brandPink {
+    --tw-bg-opacity: 1;
+    background-color: rgba(255,77,109,var(--tw-bg-opacity));
+  }
+  
+  .bg-brandTurq {
+	   --tw-bg-opacity: 1;
+	   background-color: #92a8d1;
+  }
+  
+
+.radial-teal-bg {
+   background-image: radial-gradient(
+    125% 125% at 50% 0%,  /* position the center of the teal at the top */
+    #14b8a6 0%,            /* teal starts at the center */
+    #ffffff 60%            /* fades to white towards edges */
+  );
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.radial-teal-bg-btm {
+	background-image: radial-gradient(
+	125% 125% at 50% 10%, 
+	#ffffff 40%, 
+	#14b8a6 100%
+	);
+	background-size: 100% 100%;
+}
+
+.linear-teal-bg {
+	 background-image: 
+      linear-gradient(45deg, 
+        rgba(240,253,250,1) 0%, 
+        rgba(204,251,241,0.7) 30%, 
+        rgba(153,246,228,0.5) 60%, 
+        rgba(94,234,212,0.4) 100%
+      ),
+      radial-gradient(circle at 40% 30%, rgba(255,255,255,0.8) 0%, transparent 40%),
+      radial-gradient(circle at 80% 70%, rgba(167,243,208,0.5) 0%, transparent 50%),
+      radial-gradient(circle at 20% 80%, rgba(209,250,229,0.6) 0%, transparent 45%);
+}
+
+
+}
+.top-bar {
+  background: linear-gradient(to right, #28D7D7, #1B8F8F);
+  
+  
+}
